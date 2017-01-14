@@ -7,7 +7,7 @@
          url('fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
          url('fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
          url('fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
@@ -93,7 +93,7 @@ body {
     color: #2d2d2d;
     margin: 0px;    
     padding: 0;
-    font-family: 'ralewaylight';
+    font-family: 'ralewaylight', sans-serif;
 }
 
 p{
@@ -108,9 +108,8 @@ section{
 }
 
 h2 {
-    padding: 40px 25px 25px 25px;
-    margin: 0px;
-    font-family: 'playfair_displayitalic';
+    margin: 60px;
+    font-family: 'playfair_displayitalic', serif-italic;
     font-size: 32px;
 }
 
@@ -128,7 +127,7 @@ section li {
 
 li h3 {
     color: #b64036;
-    font-family: 'playfair_displayregular';
+    font-family: 'playfair_displayregular', serif;
     font-size: 18px;
 }
 
@@ -152,22 +151,25 @@ a {
 }
 
 input{
-    color: lightslategray;
-    font-size: 12px;
-    margin: 5px;
+    font-family: 'ralewaylight', sans-serif;
+    color: #969696;
+    font-size: 16px;
+    margin: 10px;
     border: none;
-    padding: 6px;
+    padding: 4px;
     position: absolute;
     left: 5px;
 }
+/* NOT WORKING
+input:active {
+    border: none;
+}*/
 
 button {
     float: right;
     color: white;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,
-    rgba(0,0,0,0.25) 100%), red;
-    opacity: .9;
-    padding: 10px 30px;
+    background: #E2574C;
+    padding: 15px 30px;
     border-radius: 30px;
     border: none;
 }
@@ -178,7 +180,7 @@ button {
 }
 
 .firstSection p {
-    padding: 20px;
+    margin: 40px 5px;
 }
 
 .aloha-h1 {
@@ -204,7 +206,6 @@ button {
 
 .banner {
     color: white;
-    text-align: center;
     margin: 0;
     padding: 100px 10px;
     height: 200px;
@@ -215,9 +216,8 @@ button {
 }
 
 .bannertext{
+    text-shadow: #242424 1px 1px 2px;
     font-weight: bold;
-    text-align: center;
-    padding-top: 25px;
     letter-spacing: 5px; 
     position: relative; /** relative to its original position,
     moving it 50px down....**/
@@ -225,11 +225,13 @@ button {
 }
 
 .bannerbigtext {
+    text-shadow: #242424 1px 1px 2px;
     font-size: 2rem;
-    font-family: 'playfair_displayregular';
+    font-family: 'playfair_displayregular', serif;
     opacity: 1;
 }
 .smallbannertext {
+        font-family: 'ralewaymedium', sans-serif;
         font-size: 16px;
         position: relative;
         bottom: 10px;
@@ -240,7 +242,7 @@ button {
 }
 
 .boldheader {
-    font-family: 'playfair_displaybold';
+    font-family: 'playfair_displaybold' serif-bold;
 }
 
 /** List **/
@@ -251,6 +253,7 @@ button {
 }
 
 .subscribeSection {
+    text-shadow: #242424 1px 1px 2px;
     color: white;
     background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
     url(../images/wave-bkgd.jpg) no-repeat bottom;
@@ -270,15 +273,16 @@ a:hover{
 
 footer {
     border-top: 8px solid white;
-    background-color: #242424;
+    background-color: black;
     opacity: .9;
     display: inline-block;
     width: 100%;
     height: 250px;
+    margin-bottom: -100px;  
 }
 
 footer p {
-    font-family: 'playfair_displayregular';
+    font-family: 'playfair_displayregular', sans-serif;
 }
 
 .nav-left {
@@ -297,7 +301,7 @@ footer p {
     color: white;
     margin: 0 auto;
     padding: 10px;
-    font-family: 'ralewaymedium';
+    font-family: 'ralewaymedium', sans-serif;
 }
 
 .nav-right li {
@@ -328,7 +332,7 @@ footer p {
 
 @media all and (min-width: 480px) {
     .firstSection {
-        padding: 50px 5%;
+        padding: 0px 5%;
     }
 
    .smallbannertext {
@@ -382,6 +386,18 @@ footer p {
 
 @media all and (min-width: 720px) {
 
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    li h3 {
+        font-size: 1.5rem;
+    }
+
+    ul {
+        margin: 20px 0 40px 0;
+    }
+
     .aloha {
         width: 12%;
     }
@@ -391,19 +407,22 @@ footer p {
     }
     
     .firstSection {
-        padding: 50px 25%;
+        padding: 0px 25%;
     }
 
     .banner {
-        height: 250px;
+        height: 350px;
         background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
         url(../images/banner-girl.png) no-repeat center 70px,
         url(../images/flower-bkgd.jpg);
         background-size: contain;
     }
 
+    .bannertext {
+        top: 120px;
+    }
     .bannerbigtext{
-        font-size: 3rem;
+        font-size: 4rem;
         padding-top: 20px;
     }
 
@@ -414,6 +433,6 @@ footer p {
     }
 
     .subscribeSection {
-        padding: 30px 25%;
+        padding: 20px 25% 40px 25%;
     }
 }
