@@ -7,7 +7,7 @@
          url('fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
          url('fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
          url('fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 
 }
@@ -242,7 +242,7 @@ button {
 }
 
 .boldheader {
-    font-family: 'playfair_displaybold' serif-bold;
+    font-family: 'playfair_displaybold', serif-bold;
 }
 
 /** List **/
