@@ -1,3 +1,4 @@
 # Project 1
 
-This is my first Red Academy project
+Used CSS and HTML to create a homepage
+for Aloha Apparel.
