@@ -97,8 +97,8 @@ body {
 }
 
 p{
-    font-size: 16px;
-    margin: 3px;
+    font-size: 18px;
+    /*margin: 3px;*/
     font-family: 'ralewaylight', sans-serif;
     letter-spacing: 1px;
 }
@@ -113,82 +113,20 @@ h2 {
     font-size: 32px;
 }
 
-.flexlist {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexlist h3 {
-    margin: 20px;
-}
-
-section li {
-    display: inline-block;
-    padding: 15px;
-    margin-bottom: 30px;
-    font-family: 'ralewaylight';
-}
-
-li h3 {
-    color: #E2574C;
-    font-family: 'playfair_displayregular', serif;
-    font-size: 18px;
-}
-
-li p {
-    font-size: 12px;
-    color: #969696;
-}
-
 a {
     color: white;
 }
 
-.buttonwrap {
-    display: flex;
-    justify-content: space-between;
-    width: 450px;
-    padding: 3px;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 30px;
-    border: none;
-}
-
-input{
-    font-family: 'ralewaylight', sans-serif;
-    color: #969696;
-    font-size: 16px;
-    margin-left: 10px;
-    border: none;
-    padding: 3px;
-}
-
-button {
-    font-size: 16px;
-    color: white;
-    background: #E2574C;
-    padding: 10px 25px;
-    border-radius: 30px;
-    border: none;
-}
-
-.firstSection {
-    border-bottom:1px solid #d7d7d7;
-    line-height: 35px;
-}
-
-.firstSection p {
-    margin: 40px 0;
-}
-
-.aloha-h1 { /** How can i remove this from the flex layout?**/
-    display: inline;
-    visibility: hidden;
+a:hover{
+    color: #b64036;
 }
 
 /** Header **/
+
+.aloha-h1 { 
+    display: inline;
+    visibility: hidden;
+}
 
 header {
     display: flex;
@@ -198,13 +136,13 @@ header {
 
 .aloha {
     width: 125px;
-    padding: 10px;
+    padding: 5px;
     order: -1;
 }
 
 .cart {
-    width: 50px;
-    padding: 10px;
+    width: 500px;
+    padding: 16px;
 }
 
 /** banner **/
@@ -213,7 +151,6 @@ header {
     color: white;
     margin: 0;
     padding: 100px 10px;
-    height: 200px;
     background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
     url(../images/banner-girl.png) no-repeat center 50px,
     url(../images/flower-bkgd.jpg) no-repeat center;
@@ -250,28 +187,96 @@ header {
     font-family: 'playfair_displaybold', serif-bold;
 }
 
+/** First Section **/
+
+.firstSection {
+    border-bottom:1px solid #d7d7d7;
+    line-height: 35px;
+}
+
+.firstSection p {
+    margin: 40px 0;
+}
+
 /** List **/
+
+.flexlist {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flexlist h3 {
+    margin: 20px;
+}
+
+section li {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: 'ralewaylight';
+    height: 375px;
+}
+
+li h3 {
+    color: #E2574C;
+    font-family: 'playfair_displayregular', serif;
+    font-size: 22px;
+    margin: 10px auto;
+}
+
+li p {
+    font-size: 12px;
+    color: #969696;
+}
 
 .listImage {
     height: 325px;
     width: 325px;
 }
 
+/** SubscribeSection **/
+
 .subscribeSection {
     text-shadow: #242424 1px 1px 2px;
     color: white;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+    background: linear-gradient(to bottom, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.10) 100%),
     url(../images/wave-bkgd.jpg) no-repeat bottom;
     padding: 30px 10px;
     line-height: 30px;
 }
 
 .subscribeSection p {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
-a:hover{
-    color: #b64036;
+.buttonwrap {
+    display: flex;
+    justify-content: space-between;
+    width: 425px;
+    padding: 3px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+}
+
+input{
+    font-family: 'ralewaylight', sans-serif;
+    color: #969696;
+    font-size: 16px;
+    margin-left: 10px;
+    border: none;
+    padding: 3px;
+}
+
+button {
+    font-size: 16px;
+    color: white;
+    background: #E2574C;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
 }
 
 /** footer **/
@@ -323,13 +328,6 @@ footer p {
 
 .address {
     opacity: .3;  
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-    clear: both;
 }
 
 /** MEDIA QUERIES **/
@@ -418,11 +416,11 @@ footer p {
     }
 
     .cart{
-        width: 4%;
+        width: 5%;
     }
     
     .firstSection {
-        padding: 0px 25%;
+        padding: 0px 23% 15px 23%;
     }
 
     .banner {
@@ -434,11 +432,11 @@ footer p {
     }
 
     .bannertext {
-        top: 120px;
+        top: 130px;
     }
+
     .bannerbigtext{
         font-size: 4rem;
-        padding-top: 20px;
     }
 
     .listImage {
