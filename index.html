@@ -6,12 +6,20 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header>
+    <header class="flexHeader">
         <h1 class="aloha-h1">Aloha</h1>
         <img src="images/aloha-logo.svg" alt="aloha-logo" class="aloha">
         <img src="images/cart-icon.svg" alt="cart-icon" class="cart">
+        <ul class="navigation">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="featured.html">FEATURED</a></li>
+            <li><a href="updates.html">UPDATES</a></li>
+        </ul>    
     </header>
+    <div class="whiteSpace"></div>
     <section class="banner">
         <div class="bannertext">
             <p class="smallbannertext">NEW COLLECTION</p>
@@ -23,6 +31,14 @@
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
             for updates below.</p>
     </section>
+    <div class="pictureFlex">
+        <p class="largepic mens">MEN'S</p>
+        <p class="smallpic trends">TRENDS</p>
+        <p class="smallpic glasses">GLASSES</p>
+        <p class="smallpic sale" >SALE</p>
+        <p class="smallpic bags" >BAGS</p>
+        <p class="largepic womens" >WOMENS</p>
+    </div>
     <section>
         <h2>Most-Loved <span class="boldheader">Products</span></h2>
         <ul class="flexlist">
@@ -52,7 +68,19 @@
             </li>
         </ul>
     </section>
-    <section class="container subscribeSection">
+    <section class="scrollButtons">
+        <ul>
+            <li class="lilButtonPhase1"><button></button></li>
+            <li class="lilButtonPhase1"><button></button></li>
+            <li class="lilButtonPhase1"><button></button></li>
+            <li class="lilButtonPhase1"><button></button></li>
+            <li class="lilButtonPhase1"><button></button></li>
+            <li class="lilButtonPhase1"><button></button></li>
+            <li class="lilButtonPhase1"><button></button></li>
+            <li class="lilButtonPhase1"><button></button></li>
+        </ul>
+    </section>
+    <section class="subscribeSection">
         <h2>Sign-up for <span class="boldheader">Updates</span></h2>
         <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
             our blog. Unsubscribe at any time.
@@ -66,7 +94,7 @@
         <div class="nav-left">
             <p>&copy; 2016 Aloha Apparel Co.</p>
             <p> Powered by HTML and CSS.</p>
-            <p class="phone">604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>   
+            <p class="phone">604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
             <div class="address">
                 <p>1490 W Broadway </p>
                 <p>Vancouver, BC, Canada </p>
@@ -74,15 +102,17 @@
         </div>
         <ul class="nav-right">
             <li><i class="fa fa-facebook" aria-hidden="true"></i>
-                <span class="hideme">Facebook</span></li>
+                <span class="hideme"> Facebook</span></li>
             <li><i class="fa fa-twitter" aria-hidden="true"></i>
-                <span class="hideme">Twitter</span></li>
+                <span class="hideme"> Twitter</span></li>
             <li><i class="fa fa-instagram" aria-hidden="true"></i>
-                <span class="hideme">Instagram</span></li>
+                <span class="hideme"> Instagram</span></li>
             <li><i class="fa fa-google-plus" aria-hidden="true"></i>
-                <span class="hideme">Google+</span></li>
+                <span class="hideme"> Google+</span></li>
             <li><i class="fa fa-pinterest" aria-hidden="true"></i>
-                <span class="hideme">Pintrest</span></li>
+                <span class="hideme"> Pintrest</span></li>
         </ul>
     </footer>
+    <script src="javascript/jquery-3.1.1.min.js"></script>
+    <script src="javascript/scripts.js"></script>
 </body>

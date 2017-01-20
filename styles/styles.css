@@ -108,13 +108,9 @@ section{
 }
 
 h2 {
-    margin: 60px 60px 30px 60px;
+    margin: 50px 30px 30px 30px;
     font-family: 'playfair_displayitalic', serif-italic;
-    font-size: 32px;
-}
-
-a {
-    color: white;
+    font-size: 34px;
 }
 
 a:hover{
@@ -124,35 +120,70 @@ a:hover{
 /** Header **/
 
 .aloha-h1 { 
-    display: inline;
-    visibility: hidden;
+    display: none;
+}
+
+.whiteSpace {
+    display: block;
+    width: 100%;
+    height: 100px;
 }
 
 header {
     display: flex;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     align-items: center; /** why does this work lol **/
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: +1;
+    background-color: white;
+    border-bottom: 1px solid #d7d7d7; 
 }
 
 .aloha {
     width: 125px;
-    padding: 5px;
+    padding: 20px;
     order: -1;
+    flex-grow: 0;
 }
 
 .cart {
-    width: 500px;
-    padding: 16px;
+    width: 50px;
+    padding: 20px;
+    flex-grow: 0;
+}
+
+.navigation {
+    text-align: center;
+    justify-content: center;
+    align-self: flex-end;
+    height: 38px;
+    flex-grow: 2;
+    border-top: 1px solid #d7d7d7;
+}
+
+.navigation li {
+    margin: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #E2574C;
+    font-family: 'ralewaymedium';
 }
 
 /** banner **/
 
 .banner {
     color: white;
+    height: 200px;
     margin: 0;
     padding: 100px 10px;
     background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
-    url(../images/banner-girl.png) no-repeat center 50px,
+    url(../images/banner-girl.png) no-repeat center 60px,
     url(../images/flower-bkgd.jpg) no-repeat center;
     background-size: cover, 150px, cover;
 }
@@ -168,15 +199,16 @@ header {
 
 .bannerbigtext {
     text-shadow: #242424 1px 1px 2px;
-    font-size: 2rem;
+    font-size: 36px;
+    padding: 15px 15%;
     font-family: 'playfair_displayregular', serif;
     opacity: 1;
 }
 .smallbannertext {
-        font-family: 'ralewaymedium', sans-serif;
-        font-size: 16px;
-        position: relative;
-        bottom: 10px;
+    font-family: 'ralewaylight', sans-serif;
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
 }
 
 .banner p {
@@ -190,32 +222,109 @@ header {
 /** First Section **/
 
 .firstSection {
-    border-bottom:1px solid #d7d7d7;
-    line-height: 35px;
+    /*border-bottom:1px solid #d7d7d7;*/
+    line-height: 30px;
 }
 
 .firstSection p {
-    margin: 40px 0;
+    font-size: 14px;
+    margin: 20px 20px;
+}
+
+/** Picture Section**/
+
+.pictureFlex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 750px;
+    padding-top: 30px;
+    /*overflow: hidden;*/
+}
+
+.pictureFlex img{
+    max-width: 100%;
+}
+
+.pictureFlex p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ralewaymedium';
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.trends {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
+    url(../images/trends-category.jpg) no-repeat center;
+    flex: 2 0 50%;
+    background-size: cover, cover;
+    box-sizing: border-box;
+    border-right: 4px solid white;
+    border-bottom: 8px solid white;
+}
+
+.glasses {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
+    url(../images/glasses-category.jpg)no-repeat center;
+    flex: 2 0 50%;
+    background-size: cover, cover;
+    box-sizing: border-box;
+    border-left: 4px solid white;
+    border-bottom: 8px solid white;
+}
+
+.sale {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
+    url(../images/sale-category.jpg) no-repeat center;
+    flex: 2 0 50%;
+    background-size: cover, cover;
+    box-sizing: border-box;
+    border-right: 4px solid white;
+    
+}
+
+.bags {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
+    url(../images/bags-category.jpg)no-repeat center;
+    /*flex: 2 0 50%;*/
+    background-size: cover, cover;
+    box-sizing: border-box;
+    border-left: 4px solid white;
+}
+
+.mens {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
+    url(../images/mens-category.jpg)no-repeat center;
+    background-size: cover, cover;
+    flex: 2 0 100%;
+    border-bottom: 8px solid white;
+    
+}
+
+.womens {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
+    url(../images/womens-category.jpg)no-repeat center;
+    flex-grow: 2;
+    flex: 2 0 100%;
+    background-size: cover, cover;
+    border-top: 8px solid white;
 }
 
 /** List **/
 
-.flexlist {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
 .flexlist h3 {
-    margin: 20px;
+    margin: 0px;
 }
 
-section li {
+.flexlist li {
     display: inline-block;
-    padding: 10px;
-    margin-bottom: 30px;
+    margin:  0 30px 30px 30px;
     font-family: 'ralewaylight';
-    height: 375px;
+    height: 400px;
 }
 
 li h3 {
@@ -235,6 +344,39 @@ li p {
     width: 325px;
 }
 
+/** Little Scroll Nubbys **/
+
+/*.scrollButtons {
+    height: 30px;
+    width: 100%;
+    display: block;
+}*/
+
+.scrollButtons ul li {
+    margin: 0 5px 20px 5px;
+    display: inline-block;
+}
+
+.lilButtonPhase1 button{
+    border: 0px;
+    border-radius: 100%;
+    padding: 0;
+    /*margin: 4px;*/
+    height: 10px;
+    width: 10px;
+    background-color: #d7d7d7;
+}
+
+.lilButtonPhase2 button{
+    border: 0px;
+    border-radius: 100%;
+    padding: 0;
+    /*margin: 4px;*/
+    height: 10px;
+    width: 10px;
+    background-color: black;
+}
+
 /** SubscribeSection **/
 
 .subscribeSection {
@@ -242,18 +384,19 @@ li p {
     color: white;
     background: linear-gradient(to bottom, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.10) 100%),
     url(../images/wave-bkgd.jpg) no-repeat bottom;
-    padding: 30px 10px;
     line-height: 30px;
+    padding: 1px 0 50px 0; /** Not working as intended **/
 }
 
 .subscribeSection p {
     padding-bottom: 30px;
+    font-size: 16px;
 }
 
 .buttonwrap {
     display: flex;
     justify-content: space-between;
-    width: 425px;
+    width: 325px;
     padding: 3px;
     margin: 0 auto;
     background-color: white;
@@ -261,7 +404,7 @@ li p {
     border: none;
 }
 
-input{
+.buttonwrap input{
     font-family: 'ralewaylight', sans-serif;
     color: #969696;
     font-size: 16px;
@@ -270,7 +413,7 @@ input{
     padding: 3px;
 }
 
-button {
+.buttonwrap button {
     font-size: 16px;
     color: white;
     background: #E2574C;
@@ -285,7 +428,9 @@ footer {
     border-top: 8px solid white;
     background-color: #242424;
     opacity: .9;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     height: 250px;
     margin-bottom: -100px;  
@@ -295,10 +440,15 @@ footer p {
     font-family: 'playfair_displayregular', sans-serif;
 }
 
+footer a {
+    color: white;
+}
+
 .nav-left {
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-self: center;
     margin-left: 10px;
     color: white;
@@ -307,7 +457,6 @@ footer p {
 .nav-right {
     display: flex;
     flex-flow: wrap;
-    flex-direction: column;
     align-self: center;
     color: white;
     padding: 10px;
@@ -315,7 +464,7 @@ footer p {
 }
 
 .nav-right li {
-    padding: 5px;
+    padding: 7px;
 }
 
 .hideme {
@@ -332,9 +481,68 @@ footer p {
 
 /** MEDIA QUERIES **/
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 600px) {
+
+    header {
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+    .aloha {
+        padding-left: 40px;
+    }
+
+    .navigation {
+        order: -1;
+        border-top: none;
+        align-self: center;
+    }
+
+    .navigation li {
+        padding: 0 10px;
+    }
+
+    .navigation a {
+        font-size: 17px;
+    }
+     
+    .cart{
+        width: 50px;
+        padding-right: 40px;
+    }
+
     .firstSection {
         padding: 0px 5%;
+    }
+
+
+    .pictureFlex{
+        height: 350px;
+    }
+
+    .largepic{
+        flex: 0 1 50%;
+        border-top: none;
+    }
+
+    .smallpic{
+        flex: 1 0 25%;
+    }
+
+    .womens {
+        box-sizing: border-box;
+        border-left: 8px solid white;
+    }
+
+    .trends {
+        box-sizing: border-box;
+        border-left: 8px solid white;
+    }
+
+    .flexlist {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     footer {
@@ -343,9 +551,14 @@ footer p {
     }
 
    .smallbannertext {
+        font-family: 'ralewaymedium'
         font-size: 20px;
         position: relative;
         bottom: 20px;
+    }
+
+    .buttonwrap {
+        width: 425px;
     }
 
     .hideme {
@@ -361,6 +574,7 @@ footer p {
     .nav-right{
         padding: 40px;
         justify-content: flex-end;
+        flex-direction: column;
         margin: 0;
     }
 
@@ -386,17 +600,12 @@ footer p {
     li {
         padding: 0;
     }
-     
-    .cart{
-        width: 50px;
-    }
-
 }
 
-@media all and (min-width: 720px) {
+@media all and (min-width: 1240px) {
 
     header {
-        justify-content: space-around;
+        justify-content: space-around; /**doesnt do anything??**/
     }
 
     h2 {
@@ -405,10 +614,6 @@ footer p {
 
     li h3 {
         font-size: 1.5rem;
-    }
-
-    ul {
-        margin: 20px 0 40px 0;
     }
 
     .aloha {
@@ -437,6 +642,10 @@ footer p {
 
     .bannerbigtext{
         font-size: 4rem;
+    }
+
+    .pictureFlex{
+        height: 600px;
     }
 
     .listImage {
