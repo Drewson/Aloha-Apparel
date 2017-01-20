@@ -126,7 +126,7 @@ a:hover{
 .whiteSpace {
     display: block;
     width: 100%;
-    height: 100px;
+    height: 85px;
 }
 
 header {
@@ -237,7 +237,7 @@ header {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 100%;
+    /*width: 100%;*/
     height: 750px;
     padding-top: 30px;
     /*overflow: hidden;*/
@@ -316,15 +316,31 @@ header {
 
 /** List **/
 
-.flexlist h3 {
-    margin: 0px;
+.clothesList {
+    height: 600px;
+    display: block;
 }
 
-.flexlist li {
-    display: inline-block;
-    margin:  0 30px 30px 30px;
+.addToCart {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 7px;
+    margin: 10px;
+    width: 100px;
+    font-family: 'ralewaymedium';
+    font-weight: bold;
+}
+
+.main-carousel h3 {
+    padding: 20px;
+}
+
+.carousel-cell {
     font-family: 'ralewaylight';
-    height: 400px;
+    height: 450px;
+    width: 100%;
 }
 
 li h3 {
@@ -345,12 +361,6 @@ li p {
 }
 
 /** Little Scroll Nubbys **/
-
-/*.scrollButtons {
-    height: 30px;
-    width: 100%;
-    display: block;
-}*/
 
 .scrollButtons ul li {
     margin: 0 5px 20px 5px;
@@ -404,7 +414,7 @@ li p {
     border: none;
 }
 
-.buttonwrap input{
+.subscribeInput {
     font-family: 'ralewaylight', sans-serif;
     color: #969696;
     font-size: 16px;
@@ -413,7 +423,7 @@ li p {
     padding: 3px;
 }
 
-.buttonwrap button {
+.subscribeButton {
     font-size: 16px;
     color: white;
     background: #E2574C;
@@ -483,6 +493,10 @@ footer a {
 
 @media all and (min-width: 600px) {
 
+    .carousel-cell {
+        width: 50%;
+    }
+
     header {
         width: 100vw;
         justify-content: space-around;
@@ -496,14 +510,6 @@ footer a {
         order: -1;
         border-top: none;
         align-self: center;
-    }
-
-    .navigation li {
-        padding: 0 10px;
-    }
-
-    .navigation a {
-        font-size: 17px;
     }
      
     .cart{
@@ -603,9 +609,21 @@ footer a {
 }
 
 @media all and (min-width: 1240px) {
+        
+    .whiteSpace {
+        height: 100px;
+    }
 
     header {
         justify-content: space-around; /**doesnt do anything??**/
+    }
+
+   .navigation li {
+        padding: 0 10px;
+    }
+
+    .navigation a {
+        font-size: 17px;
     }
 
     h2 {
@@ -646,6 +664,10 @@ footer a {
 
     .pictureFlex{
         height: 600px;
+    }
+
+    .carousel-cell {
+        width: 25%;
     }
 
     .listImage {

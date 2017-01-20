@@ -4,6 +4,7 @@
     <title>Aloha Apparel</title>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/flickity.css" media="screen">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -39,45 +40,65 @@
         <p class="smallpic bags" >BAGS</p>
         <p class="largepic womens" >WOMENS</p>
     </div>
-    <section>
+    <section class="clothesList">
         <h2>Most-Loved <span class="boldheader">Products</span></h2>
-        <ul class="flexlist">
-            <li>
+        <ul class="main-carousel">
+            <li class="carousel-cell">
                 <img src="images/stretch-knit-dress.jpg" alt="stretchKnitDress" class="listImage">
                 <p>DRESSES</p>
                 <h3>Stretch Knit Dress</h3>
                 <p>$169.00</p>
+                <button class="addToCart">Add To Cart</button>
             </li>
-            <li>
+            <li class="carousel-cell">
                 <img src="images/cotton-blue-shirt.jpg" alt="cottonBlueShirt" class="listImage">
                 <p>SHIRTS</p>
                 <h3>Cotton Blue Shirt</h3>
                 <p>$89.00</p>
+                <button class="addToCart">Add To Cart</button>
             </li>
-            <li>
+            <li class="carousel-cell">
                 <img src="images/checked-stretch-dress.jpg" alt="checkedStretchDress" class="listImage">
                 <p>DRESSES</p>
-                <h3>Checked Stretch <br> Dress</h3>
+                <h3>Checked Stretch Dress</h3>
                 <p>$129.00</p>
+                <button class="addToCart">Add To Cart</button>
             </li>
-            <li>
+            <li class="carousel-cell">
                 <img src="images/blue-hipster-backpack.jpg" alt="blueHipsterBackpack" class="listImage">
                 <p>BAGS</p>
-                <h3>Blue Hipster <br> Backpack</h3>
+                <h3>Blue Hipster Backpack</h3>
                 <p>$69.00</p>
+                <button class="addToCart">Add To Cart</button>
             </li>
-        </ul>
-    </section>
-    <section class="scrollButtons">
-        <ul>
-            <li class="lilButtonPhase1"><button></button></li>
-            <li class="lilButtonPhase1"><button></button></li>
-            <li class="lilButtonPhase1"><button></button></li>
-            <li class="lilButtonPhase1"><button></button></li>
-            <li class="lilButtonPhase1"><button></button></li>
-            <li class="lilButtonPhase1"><button></button></li>
-            <li class="lilButtonPhase1"><button></button></li>
-            <li class="lilButtonPhase1"><button></button></li>
+            <li class="carousel-cell">
+                <img src="images/demin-overall-shorts.jpg" alt="denimoverallshorts" class="listImage">
+                <p>DENIM</p>
+                <h3>Denim Overall Shorts</h3>
+                <p>$89.00</p>
+                <button class="addToCart">Add To Cart</button>
+            </li>
+            <li class="carousel-cell">
+                <img src="images/pink-dotted-dress.jpg" alt="pinkdotteddress" class="listImage">
+                <p>DRESSES</p>
+                <h3>Pink Dotted Dress</h3>
+                <p>$99.00</p>
+                <button class="addToCart">Add To Cart</button>
+            </li>
+            <li class="carousel-cell">
+                <img src="images/blue-silk-dress.jpg" alt="bluesilkdress" class="listImage">
+                <p>DRESSES</p>
+                <h3>Blue Silk Dress</h3>
+                <p>$119.00</p>
+                <button class="addToCart">Add To Cart</button>
+            </li>
+            <li class="carousel-cell">
+                <img src="images/cotton-yellow-tshirt.jpg" alt="cottonyellowshirt" class="listImage">
+                <p>SHIRTS</p>
+                <h3>Cotton Yellow</h3>
+                <p>$39.00</p>
+                <button class="addToCart">Add To Cart</button>
+            </li>
         </ul>
     </section>
     <section class="subscribeSection">
@@ -86,8 +107,8 @@
             our blog. Unsubscribe at any time.
         </p>
         <div class="buttonwrap">
-            <input type="text" name="sub" value="Your Email" />
-            <button>Subscribe</button>
+            <input type="text" name="sub" value="Your Email" class="subscribeInput"/>
+            <button class="subscribeButton">Subscribe</button>
         </div>
     </section>
     <footer>
@@ -114,5 +135,6 @@
         </ul>
     </footer>
     <script src="javascript/jquery-3.1.1.min.js"></script>
+    <script src="javascript/flickity.js"></script>
     <script src="javascript/scripts.js"></script>
 </body>
