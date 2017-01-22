@@ -3,7 +3,8 @@ $(function(){
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
-        contain: true
+        contain: true, 
+        preNextButtons: false
 });
 
     $('.buttonwrap').on('click', 'button', function(){
@@ -21,4 +22,13 @@ $(function(){
         
     });
 
+
+    var counter = 0;
+
+    $('li').on('click', 'button', function(event){
+        console.log(event);
+        counter++;
+        $('.cartNumber').addClass('showButton').text(counter);
+
+    })
 });

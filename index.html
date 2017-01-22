@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aloha Apparel</title>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/flickity.css" media="screen">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="flexHeader">
-        <h1 class="aloha-h1">Aloha</h1>
+        <h1 class="screen-reader">Aloha</h1>
         <img src="images/aloha-logo.svg" alt="aloha-logo" class="aloha">
         <img src="images/cart-icon.svg" alt="cart-icon" class="cart">
+        <div class="cartNumber"><p></p></div>
         <ul class="navigation">
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="shop.html">SHOP</a></li>
@@ -22,26 +24,27 @@
     </header>
     <div class="whiteSpace"></div>
     <section class="banner">
-        <div class="bannertext">
-            <p class="smallbannertext">NEW COLLECTION</p>
-            <p class="bannerbigtext">Spring/Summer 2016</p>
+        <div class="bannerText">
+            <h1></h1>
+            <p class="smallBannerText">New Collection</p>
+            <p class="bannerBigText">Spring/Summer 2016</p>
         </div>
     </section>
-    <section class="firstSection">
-        <h2>Hand-Crafted <span class="boldheader">Styles</span></h2>
+    <section class="firstSection container">
+        <h2 class="italicHeader">Hand-Crafted <span class="boldheader">Styles</span></h2>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
             for updates below.</p>
     </section>
     <div class="pictureFlex">
-        <p class="largepic mens">MEN'S</p>
-        <p class="smallpic trends">TRENDS</p>
-        <p class="smallpic glasses">GLASSES</p>
-        <p class="smallpic sale" >SALE</p>
-        <p class="smallpic bags" >BAGS</p>
-        <p class="largepic womens" >WOMENS</p>
+        <p class="largePic mens">MEN'S</p>
+        <p class="smallPic trends">TRENDS</p>
+        <p class="smallPic glasses">GLASSES</p>
+        <p class="smallPic sale" >SALE</p>
+        <p class="smallPic bags" >BAGS</p>
+        <p class="largePic womens" >WOMENS</p>
     </div>
     <section class="clothesList">
-        <h2>Most-Loved <span class="boldheader">Products</span></h2>
+        <h2 class="italicHeader">Most-Loved <span class="boldheader">Products</span></h2>
         <ul class="main-carousel">
             <li class="carousel-cell">
                 <img src="images/stretch-knit-dress.jpg" alt="stretchKnitDress" class="listImage">
@@ -101,12 +104,12 @@
             </li>
         </ul>
     </section>
-    <section class="subscribeSection">
-        <h2>Sign-up for <span class="boldheader">Updates</span></h2>
+    <section class="subscribeSection container">
+        <h2 class="italicHeader">Sign-up for <span class="boldheader">Updates</span></h2>
         <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
             our blog. Unsubscribe at any time.
         </p>
-        <div class="buttonwrap">
+        <div class="buttonWrap">
             <input type="text" name="sub" value="Your Email" class="subscribeInput"/>
             <button class="subscribeButton">Subscribe</button>
         </div>

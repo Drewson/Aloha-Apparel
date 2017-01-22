@@ -1,89 +1,97 @@
 
-/*REMEMBER TO DO CSS RESET*/
-@font-face {
-    font-family: 'playfair_displaybold';
-    src: url('fonts/playfairdisplay-bold-webfont.eot');
-    src: url('fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
-         url('fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+/*ADD A CONTAINER CLASS, fix flexpics scaling, buttonwrap remove text in js*/
 
-}
-@font-face {
-    font-family: 'playfair_displaybold_italic';
-    src: url('fonts/playfairdisplay-bolditalic-webfont.eot');
-    src: url('fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
-         url('fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-@font-face {
-    font-family: 'playfair_displayitalic';
-    src: url('fonts/playfairdisplay-italic-webfont.eot');
-    src: url('fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
-         url('fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
-    font-weight: light;
-    font-style: normal;
 
-}
+
+
+
+
+
 @font-face {
-    font-family: 'playfair_displayregular';
-    src: url('fonts/playfairdisplay-regular-webfont.eot');
-    src: url('fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
-         url('fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-family: 'Playfair Display Web';
+    src: url('../fonts/playfairdisplay-bold-webfont.eot');
+    src: url('../fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
     font-weight: bold;
     font-style: normal;
 
 }
 @font-face {
-    font-family: 'ralewaylight';
-    src: url('fonts/raleway-light-webfont.eot');
-    src: url('fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/raleway-light-webfont.woff2') format('woff2'),
-         url('fonts/raleway-light-webfont.ttf') format('truetype'),
-         url('fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
-    font-weight: light;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'ralewaylight_italic';
-    src: url('fonts/raleway-lightitalic-webfont.eot');
-    src: url('fonts/raleway-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
-         url('fonts/raleway-lightitalic-webfont.ttf') format('truetype'),
-         url('fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
+    font-family: 'Playfair Display Web Bold Italic';
+    src: url('../fonts/playfairdisplay-bolditalic-webfont.eot');
+    src: url('../fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
-    font-family: 'ralewaymedium';
-    src: url('fonts/raleway-medium-webfont.eot');
-    src: url('fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/raleway-medium-webfont.woff2') format('woff2'),
-         url('fonts/raleway-medium-webfont.ttf') format('truetype'),
-         url('fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+    font-family: 'Playfair Display Web Italic';
+    src: url('../fonts/playfairdisplay-italic-webfont.eot');
+    src: url('../fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Playfair Display Web';
+    src: url('../fonts/playfairdisplay-regular-webfont.eot');
+    src: url('../fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Raleway Light';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Raleway Light Italic';
+    src: url('../fonts/raleway-lightitalic-webfont.eot');
+    src: url('../fonts/raleway-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('../fonts/raleway-medium-webfont.eot');
+    src: url('../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'ralewaymedium_italic';
-    src: url('fonts/raleway-mediumitalic-webfont.eot');
-    src: url('fonts/raleway-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
-         url('fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
-         url('fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
+    src: url('../fonts/raleway-mediumitalic-webfont.eot');
+    src: url('../fonts/raleway-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -93,13 +101,14 @@ body {
     color: #2d2d2d;
     margin: 0px;    
     padding: 0;
-    font-family: 'ralewaylight', sans-serif;
+    font-family: 'Raleway Light', sans-serif;
+    font-weight: lighter;
 }
 
 p{
     font-size: 18px;
     /*margin: 3px;*/
-    font-family: 'ralewaylight', sans-serif;
+    font-family: 'Raleway Light', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -107,9 +116,15 @@ section{
     text-align: center;
 }
 
-h2 {
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+
+}
+
+.italicHeader {
     margin: 50px 30px 30px 30px;
-    font-family: 'playfair_displayitalic', serif-italic;
+    font-family: 'Playfair Display Web Italic', serif-italic;
     font-size: 34px;
 }
 
@@ -119,7 +134,7 @@ a:hover{
 
 /** Header **/
 
-.aloha-h1 { 
+.screen-reader { 
     display: none;
 }
 
@@ -129,7 +144,7 @@ a:hover{
     height: 85px;
 }
 
-header {
+.flexHeader {
     display: flex;
     justify-content: space-between;
     align-items: center; /** why does this work lol **/
@@ -149,8 +164,27 @@ header {
 
 .cart {
     width: 50px;
-    padding: 20px;
+    padding: 20px 10px;
     flex-grow: 0;
+}
+
+.cartNumber {
+    visibility: hidden;
+    position: fixed;
+    /*visibility: hidden;*/
+    right: 40px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #E2574C;
+    text-align: center;
+    color: white;
+}
+
+.showButton{
+    visibility: visible;
 }
 
 .navigation {
@@ -172,7 +206,7 @@ header {
     text-decoration: none;
     font-size: 15px;
     color: #E2574C;
-    font-family: 'ralewaymedium';
+    font-family: 'Raleway Medium';
 }
 
 /** banner **/
@@ -188,7 +222,7 @@ header {
     background-size: cover, 150px, cover;
 }
 
-.bannertext{
+.bannerText{
     text-shadow: #242424 1px 1px 2px;
     font-weight: bold;
     letter-spacing: 5px; 
@@ -197,15 +231,18 @@ header {
     top: 50px;
 }
 
-.bannerbigtext {
+.bannerBigText {
     text-shadow: #242424 1px 1px 2px;
     font-size: 36px;
     padding: 15px 15%;
-    font-family: 'playfair_displayregular', serif;
+    font-family: 'Playfair Display Web', serif;
+    font-weight: lighter;
     opacity: 1;
 }
-.smallbannertext {
-    font-family: 'ralewaylight', sans-serif;
+.smallBannerText {
+    font-family: 'Raleway Light', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
     font-size: 18px;
     position: relative;
     bottom: 10px;
@@ -216,7 +253,8 @@ header {
 }
 
 .boldheader {
-    font-family: 'playfair_displaybold', serif-bold;
+    font-family: 'Playfair Display Web', serif-bold;
+    font-weight: bold;
 }
 
 /** First Section **/
@@ -251,7 +289,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'ralewaymedium';
+    font-family: 'Raleway Medium';
     font-size: 22px;
     font-weight: bold;
     color: white;
@@ -317,7 +355,7 @@ header {
 /** List **/
 
 .clothesList {
-    height: 600px;
+    height: 650px;
     display: block;
 }
 
@@ -329,8 +367,12 @@ header {
     padding: 7px;
     margin: 10px;
     width: 100px;
-    font-family: 'ralewaymedium';
+    font-family: 'Raleway Medium';
     font-weight: bold;
+}
+
+.addToCart:hover {
+    background-color: #0F87A2;
 }
 
 .main-carousel h3 {
@@ -338,14 +380,14 @@ header {
 }
 
 .carousel-cell {
-    font-family: 'ralewaylight';
-    height: 450px;
+    font-family: 'Raleway Light';
+    height: 500px;
     width: 100%;
 }
 
 li h3 {
     color: #E2574C;
-    font-family: 'playfair_displayregular', serif;
+    font-family: 'Playfair Display Web', serif;
     font-size: 22px;
     margin: 10px auto;
 }
@@ -360,32 +402,6 @@ li p {
     width: 325px;
 }
 
-/** Little Scroll Nubbys **/
-
-.scrollButtons ul li {
-    margin: 0 5px 20px 5px;
-    display: inline-block;
-}
-
-.lilButtonPhase1 button{
-    border: 0px;
-    border-radius: 100%;
-    padding: 0;
-    /*margin: 4px;*/
-    height: 10px;
-    width: 10px;
-    background-color: #d7d7d7;
-}
-
-.lilButtonPhase2 button{
-    border: 0px;
-    border-radius: 100%;
-    padding: 0;
-    /*margin: 4px;*/
-    height: 10px;
-    width: 10px;
-    background-color: black;
-}
 
 /** SubscribeSection **/
 
@@ -403,7 +419,7 @@ li p {
     font-size: 16px;
 }
 
-.buttonwrap {
+.buttonWrap {
     display: flex;
     justify-content: space-between;
     width: 325px;
@@ -414,14 +430,19 @@ li p {
     border: none;
 }
 
+.buttonWrap:hover {
+    box-shadow: 5px 5px 10px grey;
+}
+
 .subscribeInput {
-    font-family: 'ralewaylight', sans-serif;
+    font-family: 'Raleway Light', sans-serif;
     color: #969696;
     font-size: 16px;
     margin-left: 10px;
     border: none;
     padding: 3px;
 }
+
 
 .subscribeButton {
     font-size: 16px;
@@ -447,7 +468,7 @@ footer {
 }
 
 footer p {
-    font-family: 'playfair_displayregular', sans-serif;
+    font-family: 'Playfair Display Web', sans-serif;
 }
 
 footer a {
@@ -455,6 +476,7 @@ footer a {
 }
 
 .nav-left {
+    font-weight: normal;
     font-size: 10px;
     display: flex;
     flex-direction: column;
@@ -470,7 +492,7 @@ footer a {
     align-self: center;
     color: white;
     padding: 10px;
-    font-family: 'ralewaylight', sans-serif;
+    font-family: 'Raleway Light', sans-serif;
 }
 
 .nav-right li {
@@ -497,7 +519,7 @@ footer a {
         width: 50%;
     }
 
-    header {
+    .flexHeader {
         width: 100vw;
         justify-content: space-around;
     }
@@ -514,7 +536,7 @@ footer a {
      
     .cart{
         width: 50px;
-        padding-right: 40px;
+        padding: 20px 40px 20px 100px;
     }
 
     .firstSection {
@@ -526,12 +548,12 @@ footer a {
         height: 350px;
     }
 
-    .largepic{
+    .largePic{
         flex: 0 1 50%;
         border-top: none;
     }
 
-    .smallpic{
+    .smallPic{
         flex: 1 0 25%;
     }
 
@@ -545,7 +567,7 @@ footer a {
         border-left: 8px solid white;
     }
 
-    .flexlist {
+    .flexList {
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -557,13 +579,14 @@ footer a {
     }
 
    .smallbannertext {
-        font-family: 'ralewaymedium'
+        text-transform: uppercase;
+        font-family: 'Raleway Medium'
         font-size: 20px;
         position: relative;
         bottom: 20px;
     }
 
-    .buttonwrap {
+    .buttonWrap {
         width: 425px;
     }
 
@@ -594,7 +617,7 @@ footer a {
         padding: 0px;
     } 
 
-    .bannerbigtext {
+    .bannerBigText {
         font-size: 38px;
         margin: 10px;
     }
@@ -654,11 +677,11 @@ footer a {
         background-size: contain;
     }
 
-    .bannertext {
+    .bannerText {
         top: 130px;
     }
 
-    .bannerbigtext{
+    .bannerBigText{
         font-size: 4rem;
     }
 
