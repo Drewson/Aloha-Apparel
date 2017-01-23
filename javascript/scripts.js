@@ -27,9 +27,9 @@ $(function(){
     });
 
     $('.buttonWrap').on('click', 'button', function(){
-        console.log(this)
-        var textValue = $('.subscribeInput').val();
-        $('.subscriberInput').html().css('color', 'black');
+        console.log(this);
+        event.preventDefault();
+        var textValue = $('.subscribeInput').val();              
 
         function isEmail(email) {
             var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
