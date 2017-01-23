@@ -10,20 +10,22 @@
 </head>
 
 <body>
-    <header class="flexHeader">
+    <header>
+        <div class="flexHeader">
         <h1 class="screen-reader">Aloha</h1>
         <img src="images/aloha-logo.svg" alt="aloha-logo" class="aloha">
         <img src="images/cart-icon.svg" alt="cart-icon" class="cart">
         <div class="cartNumber"><p></p></div>
-        <ul class="navigation">
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="shop.html">SHOP</a></li>
-            <li><a href="featured.html">FEATURED</a></li>
-            <li><a href="updates.html">UPDATES</a></li>
+        <ul class="navigation" class="uppercase">
+            <li><a href="#about">about</a></li>
+            <li><a href="#shop">shop</a></li>
+            <li><a href="#featured">featured</a></li>
+            <li><a href="#updates">updates</a></li>
         </ul>    
+        </div>
     </header>
     <div class="whiteSpace"></div>
-    <section class="banner">
+    <section class="banner tabindex="-1">
         <div class="bannerText">
             <h1></h1>
             <p class="smallBannerText">New Collection</p>
@@ -31,80 +33,80 @@
         </div>
     </section>
     <section class="firstSection container">
-        <h2 class="italicHeader">Hand-Crafted <span class="boldheader">Styles</span></h2>
+        <h2 class="italicHeader" id="about">Hand-Crafted <span class="boldheader">Styles</span></h2>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
             for updates below.</p>
     </section>
-    <div class="pictureFlex">
-        <p class="largePic mens">MEN'S</p>
-        <p class="smallPic trends">TRENDS</p>
-        <p class="smallPic glasses">GLASSES</p>
-        <p class="smallPic sale" >SALE</p>
-        <p class="smallPic bags" >BAGS</p>
-        <p class="largePic womens" >WOMENS</p>
+    <div class="pictureFlex uppercase" id="shop">
+        <p class="largePic mens">Men's</p>
+        <p class="smallPic trends">Trends</p>
+        <p class="smallPic glasses">Glasses</p>
+        <p class="smallPic sale" >Sale</p>
+        <p class="smallPic bags" >Bags</p>
+        <p class="largePic womens" >Womens</p>
     </div>
-    <section class="clothesList">
+    <section class="clothesList" id="featured">
         <h2 class="italicHeader">Most-Loved <span class="boldheader">Products</span></h2>
-        <ul class="main-carousel">
+        <ul class="main-carousel" >
             <li class="carousel-cell">
                 <img src="images/stretch-knit-dress.jpg" alt="stretchKnitDress" class="listImage">
-                <p>DRESSES</p>
+                <p class="uppercase">dresses</p>
                 <h3>Stretch Knit Dress</h3>
                 <p>$169.00</p>
                 <button class="addToCart">Add To Cart</button>
             </li>
             <li class="carousel-cell">
                 <img src="images/cotton-blue-shirt.jpg" alt="cottonBlueShirt" class="listImage">
-                <p>SHIRTS</p>
+                <p class="uppercase">shirts</p>
                 <h3>Cotton Blue Shirt</h3>
                 <p>$89.00</p>
                 <button class="addToCart">Add To Cart</button>
             </li>
             <li class="carousel-cell">
                 <img src="images/checked-stretch-dress.jpg" alt="checkedStretchDress" class="listImage">
-                <p>DRESSES</p>
+                <p class="uppercase">dresses</p>
                 <h3>Checked Stretch Dress</h3>
                 <p>$129.00</p>
                 <button class="addToCart">Add To Cart</button>
             </li>
             <li class="carousel-cell">
                 <img src="images/blue-hipster-backpack.jpg" alt="blueHipsterBackpack" class="listImage">
-                <p>BAGS</p>
+                <p class="uppercase">bags</p>
                 <h3>Blue Hipster Backpack</h3>
                 <p>$69.00</p>
                 <button class="addToCart">Add To Cart</button>
             </li>
             <li class="carousel-cell">
                 <img src="images/demin-overall-shorts.jpg" alt="denimoverallshorts" class="listImage">
-                <p>DENIM</p>
+                <p class="uppercase">denim</p>
                 <h3>Denim Overall Shorts</h3>
                 <p>$89.00</p>
                 <button class="addToCart">Add To Cart</button>
             </li>
             <li class="carousel-cell">
                 <img src="images/pink-dotted-dress.jpg" alt="pinkdotteddress" class="listImage">
-                <p>DRESSES</p>
+                <p class="uppercase">dresses</p>
                 <h3>Pink Dotted Dress</h3>
                 <p>$99.00</p>
                 <button class="addToCart">Add To Cart</button>
             </li>
             <li class="carousel-cell">
                 <img src="images/blue-silk-dress.jpg" alt="bluesilkdress" class="listImage">
-                <p>DRESSES</p>
+                <p class="uppercase">dresses</p>
                 <h3>Blue Silk Dress</h3>
                 <p>$119.00</p>
                 <button class="addToCart">Add To Cart</button>
             </li>
             <li class="carousel-cell">
                 <img src="images/cotton-yellow-tshirt.jpg" alt="cottonyellowshirt" class="listImage">
-                <p>SHIRTS</p>
+                <p class="uppercase">shirts</p>
                 <h3>Cotton Yellow</h3>
                 <p>$39.00</p>
                 <button class="addToCart">Add To Cart</button>
             </li>
         </ul>
     </section>
-    <section class="subscribeSection container">
+    <section class="subscribeSection container" id="updates">
         <h2 class="italicHeader">Sign-up for <span class="boldheader">Updates</span></h2>
         <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
             our blog. Unsubscribe at any time.
