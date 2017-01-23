@@ -19,7 +19,8 @@ $(function(){
         // options
         cellAlign: 'left',
         contain: true, 
-        preNextButtons: false
+        autoPlay: 1000,
+        preNextButtons: false,
     });
 
     $('.buttonWrap').on('click', '.subscribeInput', function(){
