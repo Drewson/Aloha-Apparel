@@ -522,8 +522,7 @@ li p {
 }
 
 .subscribeInput:focus {
-    border: 0;
-    box-shadow: 0;
+    outline: none;
 }
 
 
@@ -797,7 +796,7 @@ footer a {
 
     .cart{
         width: 5%;
-        padding: 20px 40px 20px 100px;
+        padding: 20px 20px 20px 70px;
     }
     
     .firstSection {
