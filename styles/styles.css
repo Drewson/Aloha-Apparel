@@ -99,6 +99,7 @@
 
 body {
     color: #2d2d2d;
+    background-color: green;
     margin: 0px;    
     padding: 0;
     font-family: 'Raleway Light', sans-serif;
@@ -125,7 +126,7 @@ header ul a {
 }
 
 .container {
-    max-width: 1240px;
+    /*max-width: 1240px;*/
     margin: 0 auto;
 
 }
