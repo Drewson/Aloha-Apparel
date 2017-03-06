@@ -221,7 +221,7 @@ header {
     text-decoration: none;
     font-size: 0.9375rem;
     color: darkred;
-    font-family: 'Raleway Medium';
+    font-family: 'Raleway Medium', serif;
 }
 
 /** banner **/
@@ -302,10 +302,8 @@ header {
             justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    /*width: 100%;*/
     height: 750px;
     padding-top: 30px;
-    /*overflow: hidden;*/
 }
 
 .pictureFlex img{
@@ -322,7 +320,7 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: 'Raleway Medium';
+    font-family: 'Raleway Medium', serif;
     font-size: 1.375rem;
     font-weight: bold;
     color: white;
@@ -428,7 +426,7 @@ header {
     width: 100px;
     font-size: .8rem;
     line-height: 1;
-    font-family: 'Raleway Medium';
+    font-family: 'Raleway Medium', serif;
     font-weight: bold;
 }
 
@@ -441,7 +439,7 @@ header {
 }
 
 .carousel-cell {
-    font-family: 'Raleway Light';
+    font-family: 'Raleway Light', serif;
     height: 500px;
     width: 100%;
 }
