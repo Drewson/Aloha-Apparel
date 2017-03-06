@@ -1,7 +1,23 @@
-# Project 1
+#Aloha Apparel 
 
-Used CSS, HTML, and JavaScript to create a homepage
-for Aloha Apparel. In the process I expanded on my knowledge of html and css, while 
-learning the library Jquery, which was completely knew to me.
+Fashion Shop website homepage. 
 
-Known Bugs: Justify-Content: flex-end; not working correctly on Safari
+#Technologies Used.
+
+-HTML5.
+-CSS3.
+-Javascript libraries jQuery.
+-Javascript pluggin Flickity.
+-Third party icon source like FontAwesome. # Learned Skills.
+-Media Query to have a responsive site.
+-Flexing layouts instead of using floats.
+-Testing site on different browsers.
+-Learned to add .gitIgnore to local file.
+
+#Learning Outcomes
+
+Strengthened my knowledge of css and html, and learned some Javascript fundementals.
+It was a great introduction to flexbox, and Jquery. Also used a plugin for the first time
+(Flickity).
+
+![alt tag](images/screenshot.png)

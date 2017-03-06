@@ -1,13 +1,4 @@
 
-/*ADD A CONTAINER CLASS, fix flexpics scaling, buttonwrap remove text in js*/
-
-
-
-
-
-
-
-
 @font-face {
     font-family: 'Playfair Display Web';
     src: url('../fonts/playfairdisplay-bold-webfont.eot');
@@ -20,25 +11,25 @@
 
 }
 @font-face {
-    font-family: 'Playfair Display Web Bold Italic';
+    font-family: 'Playfair Display Web';
     src: url('../fonts/playfairdisplay-bolditalic-webfont.eot');
     src: url('../fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
          url('../fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
          url('../fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: italic;
 
 }
 @font-face {
-    font-family: 'Playfair Display Web Italic';
+    font-family: 'Playfair Display Web';
     src: url('../fonts/playfairdisplay-italic-webfont.eot');
     src: url('../fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
          url('../fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
          url('../fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 
 }
 @font-face {
@@ -64,14 +55,14 @@
 
 }
 @font-face {
-    font-family: 'Raleway Light Italic';
+    font-family: 'Raleway Light';
     src: url('../fonts/raleway-lightitalic-webfont.eot');
     src: url('../fonts/raleway-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
          url('../fonts/raleway-lightitalic-webfont.ttf') format('truetype'),
          url('../fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 
 }
 @font-face {
@@ -86,14 +77,14 @@
 
 }
 @font-face {
-    font-family: 'ralewaymedium_italic';
+    font-family: 'Raleway Medium';
     src: url('../fonts/raleway-mediumitalic-webfont.eot');
     src: url('../fonts/raleway-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
          url('../fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
          url('../fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 
 }
 
@@ -102,7 +93,6 @@ body {
     margin: 0px;    
     padding: 0;
     font-family: 'Raleway Light', sans-serif;
-    font-weight: lighter;
 }
 
 p{
@@ -120,19 +110,15 @@ section{
     text-transform: uppercase;
 }
 
-header ul a {
-    text-transform: uppercase;
-}
-
 .container {
-    /*max-width: 1240px;*/
     margin: 0 auto;
 
 }
 
 .italicHeader {
     margin: 50px 30px 30px 30px;
-    font-family: 'Playfair Display Web Italic', serif-italic;
+    font-family: 'Playfair Display Web', serif-italic;
+    font-style: italic;
     font-size: 2.125rem;
 }
 
@@ -196,7 +182,6 @@ header {
 .cartNumber {
     visibility: hidden;
     position: fixed;
-    /*visibility: hidden;*/
     right: 40px;
     top: 15px;
     width: 20px;
@@ -259,8 +244,7 @@ header {
     text-shadow: #242424 1px 1px 2px;
     font-weight: bold;
     letter-spacing: 5px; 
-    position: relative; /** relative to its original position,
-    moving it 50px down....**/
+    position: relative;
     top: 50px;
 }
 
@@ -293,7 +277,6 @@ header {
 /** First Section **/
 
 .firstSection {
-    /*border-bottom:1px solid #d7d7d7;*/
     line-height: 30px;
 }
 
@@ -485,7 +468,7 @@ li p {
     background: linear-gradient(to bottom, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.10) 100%),
     url(../images/wave-bkgd.jpg) no-repeat bottom;
     line-height: 30px;
-    padding: 1px 0 50px 0; /** Not working as intended **/
+    padding: 1px 0 50px 0; 
 }
 
 .subscribeSection p {
