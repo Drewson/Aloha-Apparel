@@ -97,7 +97,6 @@ body {
 
 p{
     font-size: 1.125rem;
-    /*margin: 3px;*/
     font-family: 'Raleway Light', sans-serif;
     letter-spacing: 1px;
 }
@@ -155,6 +154,7 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     position: fixed;
+    top: 0;
     z-index: +1;
     background-color: white;
     border-bottom: 1px solid #d7d7d7; 
@@ -227,10 +227,12 @@ header {
 /** banner **/
 
 .banner {
+    position: relative;
     color: white;
-    height: 200px;
+    height: 100px;
     margin: 0;
     padding: 100px 10px;
+    margin-top: 80px;
     background: -webkit-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), 
     url(../images/banner-girl.png) no-repeat center 60px,
     url(../images/flower-bkgd.jpg) no-repeat center;
@@ -240,6 +242,7 @@ header {
     background-size: cover, 150px, cover;
 }
 
+
 .bannerText{
     text-shadow: #242424 1px 1px 2px;
     font-weight: bold;
@@ -248,15 +251,18 @@ header {
     top: 50px;
 }
 
-.bannerBigText {
+.banner h2 {
     text-shadow: #242424 1px 1px 2px;
     font-size: 2.25rem;
     padding: 15px 15%;
     font-family: 'Playfair Display Web', serif;
     font-weight: lighter;
     opacity: 1;
+    letter-spacing: normal;
 }
-.smallBannerText {
+
+.banner h3 {
+    letter-spacing: normal;
     font-family: 'Raleway Light', sans-serif;
     font-weight: lighter;
     text-transform: uppercase;
@@ -281,7 +287,7 @@ header {
 }
 
 .firstSection p {
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin: 20px 20px;
 }
 
@@ -472,7 +478,7 @@ li p {
 }
 
 .subscribeSection p {
-    padding-bottom: 30px;
+    padding:0 10px 30px;
     font-size: 1rem;
 }
 
@@ -501,7 +507,7 @@ li p {
     font-size: 1rem;
     margin-left: 10px;
     border: none;
-    padding: 3px;
+    padding-top: 10px;
 }
 
 .subscribeInput:focus {
@@ -546,8 +552,9 @@ footer a {
 }
 
 .nav-left {
+    font-family: 'Playfair Display Web';
     font-weight: normal;
-    font-size: 0.625rem;
+    font-size: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -562,10 +569,16 @@ footer a {
     color: white;
 }
 
+.nav-left p {
+    font-size: 1rem;
+}
+
 .nav-right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    justify-content: center;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
     -ms-flex-item-align: center;
@@ -623,8 +636,10 @@ footer a {
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
+        margin-right: 60px;
     }
      
+    
     .cart{
         width: 50px;
     }
@@ -682,7 +697,7 @@ footer a {
                 justify-content: space-between;
     }
 
-   .smallbannertext {
+   .banner h3 {
         text-transform: uppercase;
         font-family: 'Raleway Medium', serif;
         font-size: 1.25rem;
@@ -707,6 +722,7 @@ footer a {
     }
 
     .nav-right{
+        width: auto;
         padding: 40px;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -728,7 +744,7 @@ footer a {
         padding: 0px;
     } 
 
-    .bannerBigText {
+    .banner h2 {
         font-size: 2.375rem;
         margin: 10px;
     }
@@ -748,10 +764,6 @@ footer a {
         display: inline-block;
     }
         
-    .whiteSpace {
-        height: 100px;
-    }
-
     header {
         -ms-flex-pack: distribute;
             justify-content: space-around; 
@@ -801,7 +813,7 @@ footer a {
         top: 130px;
     }
 
-    .bannerBigText{
+    .banner h2{
         font-size: 4rem;
     }
 
