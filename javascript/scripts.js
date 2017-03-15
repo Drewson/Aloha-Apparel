@@ -13,6 +13,7 @@ $(function(){
       }
   });    
     
+    //FLICKITY PLUGIN
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
@@ -30,6 +31,7 @@ $(function(){
         event.preventDefault();
         var textValue = $('.subscribeInput').val();              
 
+        //EMAIL VALIDATOR
         function isEmail(email) {
             var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             return regex.test(email);
@@ -44,6 +46,7 @@ $(function(){
     });
 
 
+    //DISPLAYS NUMBER OF ITEMS IN SHOPPING CART
     var counter = 0;
 
     $('li').on('click', 'button', function(event){
